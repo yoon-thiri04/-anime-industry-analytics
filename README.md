@@ -1,12 +1,13 @@
 # Anipluse-io — Anime Industry, Decoded
 
-An end-to-end final year **IS-212 Data & Knowledge Mining** project supervised by **Dr. Hsu Myat Mo**.
+A final-year **IS-212 Data & Knowledge Mining** project, supervised by **Dr. Hsu Myat Mo**.
 
-Demo - https://anipluse-io-7l9x.onrender.com/
+🔗 **Live demo:** https://anipulse-io-7l9x.onrender.com/
 
-Nine pages covering the whole pipeline: the dataset, descriptive mining,
-association rules, storyline clustering, the hybrid recommender, the pre-release success
-classifier with SHAP, model evaluation, and the genre demand forecast.
+Nine pages, one pipeline — from raw data to prediction:
+dataset overview → descriptive mining → association rules → storyline
+clustering → hybrid recommender → pre-release success classifier (with SHAP)
+→ model evaluation → genre demand forecasting.
 
 # Home Page & Catalogue 
 <img width="1881" height="852" alt="image" src="https://github.com/user-attachments/assets/5567241d-47d9-4461-a910-5a89161b6026" />
