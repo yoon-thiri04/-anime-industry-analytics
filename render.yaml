@@ -2,7 +2,7 @@
 # New service → "Blueprint" → point at this repo → Render reads this file.
 services:
   - type: web
-    name: ani-metrics-hq
+    name: animetrics-io
     runtime: python
     plan: free
     buildCommand: pip install -r requirements.txt
