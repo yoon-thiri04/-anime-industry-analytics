@@ -1,4 +1,4 @@
-# Anipluse-io - An Anime Industry Analytics System
+# Anipluse-io — Anime Industry, Decoded
 
 An end-to-end final year **IS-212 Data & Knowledge Mining** project supervised by **Dr. Hsu Myat Mo**.
 
