@@ -1,4 +1,4 @@
-# Anipulse-io — Anime Industry, Decoded
+# Anipulse — What actually makes an anime a hit
 
 A final-year **IS-212 Data & Knowledge Mining** project, supervised by **Dr. Hsu Myat Mo**.
 
