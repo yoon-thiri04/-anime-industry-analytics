@@ -1,0 +1,12 @@
+# Render.com blueprint — the API only (real XGBoost + SHAP + FeatureBuilder).
+# New service → "Blueprint" → point at this repo → Render reads this file.
+services:
+  - type: web
+    name: anime-industry-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -w 1 -k gthread --threads 4 --timeout 120 --chdir scripts wsgi:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.10

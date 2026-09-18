@@ -1,0 +1,38 @@
+# Anime Industry Analytics — static frontend on Netlify.
+#
+# Netlify only serves static files/JS functions; it cannot run the real
+# XGBoost + SHAP + scikit-learn models. Descriptive pages (Home, Data,
+# Patterns, Storylines, Evaluation, Forecast) are fully precomputed into
+# site/anime_data.js and need nothing else — they work the moment this
+# deploys. Catalogue / Similar / Predict call a tiny Flask API for live
+# search, recommendation and SHAP inference, so deploy that separately
+# (render.yaml is set up for Render's free tier — see README "Deploy") and
+# put its URL below. Until you do, those three pages show a clear error
+# instead of hanging.
+
+[build]
+  publish = "site"
+
+# Proxies /api/* through Netlify's edge so the browser only ever talks to
+# your Netlify domain — no CORS, and anime.js's existing fetch('/api/...')
+# calls work completely unchanged.
+[[redirects]]
+  from = "/api/*"
+  to = "https://REPLACE-WITH-YOUR-API.onrender.com/api/:splat"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/anime_data.js"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
+
+[[headers]]
+  for = "/plotly.min.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

@@ -1,0 +1,8 @@
+# Netlify Drop reads this file directly (no netlify.toml build step needed).
+# Proxies /api/* through Netlify's own edge to the Flask API on Render, so the
+# browser only ever talks to your Netlify domain and anime.js's existing
+# fetch('/api/...') calls work unchanged — no CORS setup needed.
+#
+# Edit the URL below to your deployed Render API, then re-drop this folder
+# (or drag just this edited file onto the same site in the Netlify dashboard).
+/api/*  https://REPLACE-WITH-YOUR-API.onrender.com/api/:splat  200!
