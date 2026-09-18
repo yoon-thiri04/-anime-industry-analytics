@@ -2,7 +2,7 @@
 
 A final-year **IS-212 Data & Knowledge Mining** project, supervised by **Dr. Hsu Myat Mo**.
 
-🔗 **Live demo:** https://anipulse-io-7l9x.onrender.com/
+🔗 **Live demo:** [https://anipulse-io-7l9x.onrender.com/](https://anipulse-io.onrender.com/)
 
 Nine pages, one pipeline — from raw data to prediction:
 dataset overview → descriptive mining → association rules → storyline
