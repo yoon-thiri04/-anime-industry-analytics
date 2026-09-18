@@ -1,4 +1,4 @@
-# Anipluse-io — Anime Industry, Decoded
+# Anipulse-io — Anime Industry, Decoded
 
 A final-year **IS-212 Data & Knowledge Mining** project, supervised by **Dr. Hsu Myat Mo**.
 
